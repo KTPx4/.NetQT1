@@ -1,0 +1,12 @@
+<FileList>
+  <File Reference="DevExpress.XtraCharts.v23.1.UI.dll">
+    <ToolboxItems UIFramework="WinForms" VSCategory="DX.23.1: Data &amp; Analytics">
+      <Item Type="DevExpress.XtraCharts.ChartControl" />
+      <Item Type="DevExpress.XtraCharts.Sankey.SankeyDiagramControl" />
+      <Item Type="DevExpress.XtraCharts.Heatmap.HeatmapControl" />
+    </ToolboxItems>
+  </File>
+  <File Reference="DevExpress.XtraCharts.v23.1.Wizard.dll">
+    <ToolboxItems UIFramework="WinForms" VSCategory="DX.23.1: Data &amp; Analytics" />
+  </File>
+</FileList>

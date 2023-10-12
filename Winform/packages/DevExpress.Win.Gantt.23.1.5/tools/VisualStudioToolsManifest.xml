@@ -1,0 +1,7 @@
+<FileList>
+  <File Reference="DevExpress.XtraGantt.v23.1.dll">
+    <ToolboxItems UIFramework="WinForms" VSCategory="DX.23.1: Data &amp; Analytics">
+      <Item Type="DevExpress.XtraGantt.GanttControl" />
+    </ToolboxItems>
+  </File>
+</FileList>
