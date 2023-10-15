@@ -70,9 +70,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChildForms\frmProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildForms\frmProducts.Designer.cs">
+      <DependentUpon>frmProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connections\Connection.cs" />
     <Compile Include="Customer.cs">
       <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\box_Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\box_Item.Designer.cs">
+      <DependentUpon>box_Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\dialog_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\dialog_popup.Designer.cs">
+      <DependentUpon>dialog_popup.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -106,6 +124,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChildForms\frmProducts.resx">
+      <DependentUpon>frmProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\box_Item.resx">
+      <DependentUpon>box_Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\dialog_popup.resx">
+      <DependentUpon>dialog_popup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>

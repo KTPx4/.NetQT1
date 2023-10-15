@@ -29,104 +29,116 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.orderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pnContent = new System.Windows.Forms.Panel();
             this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.colItemID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colItemName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSize = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPrice = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colOrderDetails = new DevExpress.XtraGrid.Columns.GridColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // gridControl1
+            // menuStrip1
             // 
-            this.gridControl1.DataSource = this.itemBindingSource;
-            this.gridControl1.Location = new System.Drawing.Point(123, 68);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(566, 411);
-            this.gridControl1.TabIndex = 0;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.productsToolStripMenuItem,
+            this.customersToolStripMenuItem,
+            this.orderToolStripMenuItem,
+            this.reportToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1016, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // gridView1
+            // productsToolStripMenuItem
             // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colItemID,
-            this.colItemName,
-            this.colSize,
-            this.colPrice,
-            this.colOrderDetails});
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
+            this.productsToolStripMenuItem.Name = "productsToolStripMenuItem";
+            this.productsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.productsToolStripMenuItem.Text = "Product";
+            this.productsToolStripMenuItem.Click += new System.EventHandler(this.productsToolStripMenuItem_Click);
+            // 
+            // customersToolStripMenuItem
+            // 
+            this.customersToolStripMenuItem.Name = "customersToolStripMenuItem";
+            this.customersToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.customersToolStripMenuItem.Text = "Customer";
+            // 
+            // orderToolStripMenuItem
+            // 
+            this.orderToolStripMenuItem.Name = "orderToolStripMenuItem";
+            this.orderToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.orderToolStripMenuItem.Text = "Order";
+            // 
+            // reportToolStripMenuItem
+            // 
+            this.reportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exportOrderToolStripMenuItem,
+            this.searchToolStripMenuItem});
+            this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
+            this.reportToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.reportToolStripMenuItem.Text = "Report";
+            // 
+            // exportOrderToolStripMenuItem
+            // 
+            this.exportOrderToolStripMenuItem.Name = "exportOrderToolStripMenuItem";
+            this.exportOrderToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.exportOrderToolStripMenuItem.Text = "Export Order";
+            // 
+            // searchToolStripMenuItem
+            // 
+            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.searchToolStripMenuItem.Text = "Search";
+            // 
+            // pnContent
+            // 
+            this.pnContent.AutoScroll = true;
+            this.pnContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnContent.Location = new System.Drawing.Point(0, 24);
+            this.pnContent.Name = "pnContent";
+            this.pnContent.Size = new System.Drawing.Size(1016, 609);
+            this.pnContent.TabIndex = 1;
             // 
             // itemBindingSource
             // 
             this.itemBindingSource.DataSource = typeof(Winform.Item);
             // 
-            // colItemID
-            // 
-            this.colItemID.FieldName = "ItemID";
-            this.colItemID.Name = "colItemID";
-            this.colItemID.Visible = true;
-            this.colItemID.VisibleIndex = 0;
-            // 
-            // colItemName
-            // 
-            this.colItemName.FieldName = "ItemName";
-            this.colItemName.Name = "colItemName";
-            this.colItemName.Visible = true;
-            this.colItemName.VisibleIndex = 1;
-            // 
-            // colSize
-            // 
-            this.colSize.FieldName = "Size";
-            this.colSize.Name = "colSize";
-            this.colSize.Visible = true;
-            this.colSize.VisibleIndex = 2;
-            // 
-            // colPrice
-            // 
-            this.colPrice.FieldName = "Price";
-            this.colPrice.Name = "colPrice";
-            this.colPrice.Visible = true;
-            this.colPrice.VisibleIndex = 3;
-            // 
-            // colOrderDetails
-            // 
-            this.colOrderDetails.FieldName = "OrderDetails";
-            this.colOrderDetails.Name = "colOrderDetails";
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(915, 602);
-            this.Controls.Add(this.gridControl1);
+            this.ClientSize = new System.Drawing.Size(1016, 633);
+            this.Controls.Add(this.pnContent);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.MinimumSize = new System.Drawing.Size(870, 592);
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmMain_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private DevExpress.XtraGrid.GridControl gridControl1;
         private System.Windows.Forms.BindingSource itemBindingSource;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.Columns.GridColumn colItemID;
-        private DevExpress.XtraGrid.Columns.GridColumn colItemName;
-        private DevExpress.XtraGrid.Columns.GridColumn colSize;
-        private DevExpress.XtraGrid.Columns.GridColumn colPrice;
-        private DevExpress.XtraGrid.Columns.GridColumn colOrderDetails;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem productsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem customersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem orderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportOrderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
+        private System.Windows.Forms.Panel pnContent;
     }
 }
 

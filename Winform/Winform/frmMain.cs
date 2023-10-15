@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Winform.ChildForms;
 
 namespace Winform
 {
@@ -26,17 +27,20 @@ namespace Winform
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            try
-            {
-                Connections.Connection cn = new Connections.Connection();
-                QT1Entities db = new QT1Entities(cn.GetConnectionString());
-                itemBindingSource.DataSource = db.Items.ToList();
-            }
-            catch (Exception ex)
-            {
-
-            }
+           
          
+        }
+        private void addContent(Control form)
+        {
+            pnContent.Controls.Clear();
+            form.Dock = DockStyle.Fill;
+           // form.TopLevel = false;
+            pnContent.Controls.Add(form);
+        }
+        private void productsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProducts f = new frmProducts();
+            addContent(f);
         }
     }
 }
