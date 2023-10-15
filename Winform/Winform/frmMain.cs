@@ -26,7 +26,17 @@ namespace Winform
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            try
+            {
+                Connections.Connection cn = new Connections.Connection();
+                QT1Entities db = new QT1Entities(cn.GetConnectionString());
+                itemBindingSource.DataSource = db.Items.ToList();
+            }
+            catch (Exception ex)
+            {
 
+            }
+         
         }
     }
 }

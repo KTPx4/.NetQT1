@@ -1,4 +1,4 @@
-﻿using DevExpress.LookAndFeel;
+﻿
 using DevExpress.Skins;
 using DevExpress.UserSkins;
 using System;
