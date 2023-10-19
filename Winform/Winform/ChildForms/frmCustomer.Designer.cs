@@ -1,6 +1,6 @@
 ﻿namespace Winform.ChildForms
 {
-    partial class frmProducts
+    partial class frmCustomer
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,24 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.grcViews = new DevExpress.XtraGrid.GridControl();
-            this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colItemID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colItemName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSize = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPrice = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCustID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCustName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAddress = new DevExpress.XtraGrid.Columns.GridColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grcViews)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // customerBindingSource
+            // 
+            this.customerBindingSource.DataSource = typeof(Winform.Customer);
             // 
             // panel1
             // 
@@ -64,7 +67,7 @@
             this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btnEdit.Appearance.BackColor = System.Drawing.Color.PeachPuff;
             this.btnEdit.Appearance.Options.UseBackColor = true;
-            this.btnEdit.Location = new System.Drawing.Point(484, 17);
+            this.btnEdit.Location = new System.Drawing.Point(454, 17);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(95, 36);
             this.btnEdit.TabIndex = 0;
@@ -77,7 +80,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelete.Appearance.BackColor = System.Drawing.Color.DarkRed;
             this.btnDelete.Appearance.Options.UseBackColor = true;
-            this.btnDelete.Location = new System.Drawing.Point(667, 17);
+            this.btnDelete.Location = new System.Drawing.Point(657, 17);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(95, 36);
             this.btnDelete.TabIndex = 0;
@@ -90,7 +93,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.btnAdd.Appearance.BackColor = System.Drawing.Color.ForestGreen;
             this.btnAdd.Appearance.Options.UseBackColor = true;
-            this.btnAdd.Location = new System.Drawing.Point(287, 17);
+            this.btnAdd.Location = new System.Drawing.Point(258, 17);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(95, 36);
             this.btnAdd.TabIndex = 0;
@@ -99,98 +102,84 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.grcViews);
+            this.panel2.Controls.Add(this.gridControl1);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1016, 609);
-            this.panel2.TabIndex = 5;
+            this.panel2.TabIndex = 6;
             // 
-            // grcViews
+            // gridControl1
             // 
-            this.grcViews.DataSource = this.itemBindingSource;
-            this.grcViews.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grcViews.Location = new System.Drawing.Point(0, 72);
-            this.grcViews.MainView = this.gridView1;
-            this.grcViews.Name = "grcViews";
-            this.grcViews.Size = new System.Drawing.Size(1016, 537);
-            this.grcViews.TabIndex = 5;
-            this.grcViews.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl1.DataSource = this.customerBindingSource;
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(0, 72);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(1016, 537);
+            this.gridControl1.TabIndex = 5;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
-            // 
-            // itemBindingSource
-            // 
-            this.itemBindingSource.DataSource = typeof(Winform.Item);
             // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colItemID,
-            this.colItemName,
-            this.colSize,
-            this.colPrice});
-            this.gridView1.GridControl = this.grcViews;
+            this.colCustID,
+            this.colCustName,
+            this.colAddress});
+            this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
-            // colItemID
+            // colCustID
             // 
-            this.colItemID.FieldName = "ItemID";
-            this.colItemID.Name = "colItemID";
-            this.colItemID.Visible = true;
-            this.colItemID.VisibleIndex = 0;
+            this.colCustID.FieldName = "CustID";
+            this.colCustID.Name = "colCustID";
+            this.colCustID.Visible = true;
+            this.colCustID.VisibleIndex = 0;
             // 
-            // colItemName
+            // colCustName
             // 
-            this.colItemName.FieldName = "ItemName";
-            this.colItemName.Name = "colItemName";
-            this.colItemName.Visible = true;
-            this.colItemName.VisibleIndex = 1;
+            this.colCustName.FieldName = "CustName";
+            this.colCustName.Name = "colCustName";
+            this.colCustName.Visible = true;
+            this.colCustName.VisibleIndex = 1;
             // 
-            // colSize
+            // colAddress
             // 
-            this.colSize.FieldName = "Size";
-            this.colSize.Name = "colSize";
-            this.colSize.Visible = true;
-            this.colSize.VisibleIndex = 2;
+            this.colAddress.FieldName = "Address";
+            this.colAddress.Name = "colAddress";
+            this.colAddress.Visible = true;
+            this.colAddress.VisibleIndex = 2;
             // 
-            // colPrice
-            // 
-            this.colPrice.FieldName = "Price";
-            this.colPrice.Name = "colPrice";
-            this.colPrice.Visible = true;
-            this.colPrice.VisibleIndex = 3;
-            // 
-            // frmProducts
+            // frmCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
-            this.Name = "frmProducts";
+            this.Name = "frmCustomer";
             this.Size = new System.Drawing.Size(1016, 609);
-            this.Load += new System.EventHandler(this.frmProducts_Load);
+            this.Load += new System.EventHandler(this.frmCustomer_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grcViews)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.SimpleButton btnEdit;
         private DevExpress.XtraEditors.SimpleButton btnDelete;
         private DevExpress.XtraEditors.SimpleButton btnAdd;
         private System.Windows.Forms.Panel panel2;
-        private DevExpress.XtraGrid.GridControl grcViews;
-        private System.Windows.Forms.BindingSource itemBindingSource;
+        private System.Windows.Forms.BindingSource customerBindingSource;
+        private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.Columns.GridColumn colItemID;
-        private DevExpress.XtraGrid.Columns.GridColumn colItemName;
-        private DevExpress.XtraGrid.Columns.GridColumn colSize;
-        private DevExpress.XtraGrid.Columns.GridColumn colPrice;
+        private DevExpress.XtraGrid.Columns.GridColumn colCustID;
+        private DevExpress.XtraGrid.Columns.GridColumn colCustName;
+        private DevExpress.XtraGrid.Columns.GridColumn colAddress;
     }
 }

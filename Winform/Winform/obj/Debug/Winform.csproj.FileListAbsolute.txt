@@ -197,4 +197,10 @@ D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.pdb
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.ChildForms.frmProducts.resources
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.Dialog.box_Item.resources
-D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.Diaglog.dialog_editItems.resources
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.ChildForms.frmCustomer.resources
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.Dialog.box_customer.resources
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.Diaglog.dialog_Popup.resources
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.ChildForms.frmOrders.resources
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.Dialog.box_Items_Order.resources
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.Dialog.dialog_Order.resources
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.ChildForms.frmReport.resources

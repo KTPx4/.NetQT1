@@ -7,58 +7,50 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Winform.Diaglog;
+using Winform.Dialog;
 
 namespace Winform.ChildForms
 {
-    public partial class frmProducts : UserControl
+    public partial class frmOrders : UserControl
     {
-        public frmProducts()
+        public frmOrders()
         {
             InitializeComponent();
             frmMain.frmMainInstance.ReloadRequested += Reload; // Đăng ký sự kiện reload vào delegate chung của main, để khi một form nào đó gọi reload sẽ load toàn bộ 
-        }
 
+        }
         void Reload()
         {
             // xử lý reload lại dabase vào các field chứa dữ liệu
 
-            loadGridviews();
+            loadOrders();
         }
-
-        void loadGridviews()
+        void loadOrders()
         {
             try
             {
+                //MessageBox.Show("Load 1 time");
+                orderBindingSource.DataSource = null;
                 Connections.Connection cn = new Connections.Connection();
                 QT1Entities db = new QT1Entities(cn.GetConnectionString());
-                itemBindingSource.DataSource = db.Items.ToList();
+                orderBindingSource.DataSource = db.Orders.ToList();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
             }
         }
-        private void frmProducts_Load(object sender, EventArgs e)
+        private void frmOrders_Load(object sender, EventArgs e)
         {
-            loadGridviews();
+            loadOrders();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void btnAddOrder_Click(object sender, EventArgs e)
         {
-            dialog_Popup f = new dialog_Popup();
-            f.Show();
+            dialog_Order od = new dialog_Order();   
+            od.Show();
         }
 
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-            dialog_Popup f = new dialog_Popup(2);
-            f.Show();
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-
-        }
+  
     }
 }

@@ -41,6 +41,7 @@
     <Reference Include="DevExpress.Drawing.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v23.1.Core, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -70,15 +71,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChildForms\frmCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildForms\frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\frmOrders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildForms\frmOrders.Designer.cs">
+      <DependentUpon>frmOrders.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChildForms\frmProducts.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ChildForms\frmProducts.Designer.cs">
       <DependentUpon>frmProducts.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChildForms\frmReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildForms\frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connections\Connection.cs" />
     <Compile Include="Customer.cs">
       <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\box_customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\box_customer.Designer.cs">
+      <DependentUpon>box_customer.cs</DependentUpon>
     </Compile>
     <Compile Include="Dialog\box_Item.cs">
       <SubType>UserControl</SubType>
@@ -86,11 +111,23 @@
     <Compile Include="Dialog\box_Item.Designer.cs">
       <DependentUpon>box_Item.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dialog\dialog_popup.cs">
+    <Compile Include="Dialog\box_Items_Order.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\box_Items_Order.Designer.cs">
+      <DependentUpon>box_Items_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\dialog_Order.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dialog\dialog_popup.Designer.cs">
-      <DependentUpon>dialog_popup.cs</DependentUpon>
+    <Compile Include="Dialog\dialog_Order.Designer.cs">
+      <DependentUpon>dialog_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\dialog_Popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\dialog_Popup.Designer.cs">
+      <DependentUpon>dialog_Popup.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -124,14 +161,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChildForms\frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\frmOrders.resx">
+      <DependentUpon>frmOrders.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\frmProducts.resx">
       <DependentUpon>frmProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\box_customer.resx">
+      <DependentUpon>box_customer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialog\box_Item.resx">
       <DependentUpon>box_Item.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialog\dialog_popup.resx">
-      <DependentUpon>dialog_popup.cs</DependentUpon>
+    <EmbeddedResource Include="Dialog\box_Items_Order.resx">
+      <DependentUpon>box_Items_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\dialog_Order.resx">
+      <DependentUpon>dialog_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\dialog_Popup.resx">
+      <DependentUpon>dialog_Popup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -145,6 +200,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.config" />
     <EntityDeploy Include="Model.edmx">
@@ -154,7 +210,9 @@
     <None Include="Model.edmx.diagram">
       <DependentUpon>Model.edmx</DependentUpon>
     </None>
+    <None Include="Properties\DataSources\Customer.datasource" />
     <None Include="Properties\DataSources\Item.datasource" />
+    <None Include="Properties\DataSources\Order.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -179,6 +237,7 @@
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\icons8-close-ios-16-filled-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -10,48 +10,47 @@ using System.Windows.Forms;
 
 namespace Winform.Dialog
 {
-    public partial class box_Item : UserControl
+    public partial class box_customer : UserControl
     {
         private Action<Control> deleteItem;
         private bool isEdit = false;
-        public box_Item()
+        public box_customer()
         {
             InitializeComponent();
+        }
+        public box_customer(Action<Control> delete)
+        {
+            InitializeComponent(); 
+            this.deleteItem = delete;
             lbCountItem.Hide();
         }
-        public box_Item(Action<Control> deleteItem)
+        public box_customer(Action<Control> delete, bool isEdit)
         {
             InitializeComponent();
-            this.deleteItem = deleteItem;
-            lbCountItem.Hide();
-        }
-        public box_Item(Action<Control> deleteItem, bool isEdit)
-        {
-            InitializeComponent();
-            this.deleteItem = deleteItem;
+            this.deleteItem = delete;
             this.isEdit = isEdit;
             lbCountItem.Hide();
         }
-        public box_Item(Action<Control> deleteItem, int index)
+        public box_customer(Action<Control> deleteItem, int index)
         {
             InitializeComponent();
             this.deleteItem = deleteItem;
             lbCountItem.Show();
-            lbCountItem.Text = $"Item {index}";
+            lbCountItem.Text = $"Customer {index}";
         }
-        private void box_Item_Load(object sender, EventArgs e)
+
+        private void box_customer_Load(object sender, EventArgs e)
         {
-            if(isEdit)
+            if (isEdit)
             {
                 btnDel.Enabled = false;
                 btnDel.BackColor = Color.Gray;
-                
                 txtID.Enabled = false;
             }
             else
             {
-                btnDel.Enabled = true; 
-              
+                btnDel.Enabled = true;
+
             }
         }
 
@@ -64,14 +63,13 @@ namespace Winform.Dialog
         {
             txtID.Text = "";
             txtName.Text = "";
-            txtSize.Text = "";
-            txtPrice.Text = "";
+            txtAddress.Text = "";
+           
         }
 
         public void setTitle(int index)
         {
-            lbCountItem.Text = "Item "+ index.ToString();
+            lbCountItem.Text = "Customer " + index.ToString();
         }
-
     }
 }
