@@ -205,3 +205,4 @@ D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.csproj.CopyComplete
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.exe
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.pdb
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.frmLogin.resources

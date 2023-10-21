@@ -32,14 +32,14 @@ namespace Winform
 
         public frmMain()
         {
-            /*
-                frmLogin lg = new frmLogin();
-                lg.ShowDialog();
-                if(lg.DialogResult != DialogResult.OK)
-                {
-                    Environment.Exit(0);
-                } 
-            */
+
+            frmLogin lg = new frmLogin();
+            lg.ShowDialog();
+            if (lg.DialogResult != DialogResult.OK)
+            {
+                Environment.Exit(0);
+            }
+
             InitializeComponent();
             frmMainInstance = this;
         }
