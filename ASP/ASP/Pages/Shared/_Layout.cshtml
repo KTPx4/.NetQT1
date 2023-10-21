@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ASP.styles.css" asp-append-version="true" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
 </head>
 <body>
     <header>
@@ -25,9 +27,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Customer">Customer</a>
                         </li>
-                       @*  <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
-                        </li> *@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Order">Order</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -48,6 +50,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+   
 
     @if (ViewData["PageName"] == "customer")
     {
@@ -60,7 +63,13 @@
         <link rel="stylesheet" href="~/css/items.css" />
         <script src="~/js/items.js" asp-append-version="true"></script>
     }
- 
+    @if (ViewData["PageName"] == "order")
+    {
+        <link rel="stylesheet" href="~/css/order.css" />
+        <script src="~/js/order.js" asp-append-version="true"></script>
+
+
+    }
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

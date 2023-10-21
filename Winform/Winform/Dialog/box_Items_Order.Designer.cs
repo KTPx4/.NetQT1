@@ -30,11 +30,11 @@
         {
             this.lbCount = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbbName = new System.Windows.Forms.ComboBox();
+            this.cbbIID = new System.Windows.Forms.ComboBox();
             this.ptbDel = new System.Windows.Forms.PictureBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtSum = new System.Windows.Forms.TextBox();
+            this.txtQuan = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,11 +55,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cbbName);
+            this.groupBox1.Controls.Add(this.cbbIID);
             this.groupBox1.Controls.Add(this.ptbDel);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtSum);
+            this.groupBox1.Controls.Add(this.txtQuan);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -71,21 +71,23 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // comboBox2
+            // cbbName
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(104, 72);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(137, 21);
-            this.comboBox2.TabIndex = 4;
+            this.cbbName.Enabled = false;
+            this.cbbName.FormattingEnabled = true;
+            this.cbbName.Location = new System.Drawing.Point(104, 72);
+            this.cbbName.Name = "cbbName";
+            this.cbbName.Size = new System.Drawing.Size(137, 21);
+            this.cbbName.TabIndex = 4;
             // 
-            // comboBox1
+            // cbbIID
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(104, 40);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(137, 21);
-            this.comboBox1.TabIndex = 4;
+            this.cbbIID.FormattingEnabled = true;
+            this.cbbIID.Location = new System.Drawing.Point(104, 40);
+            this.cbbIID.Name = "cbbIID";
+            this.cbbIID.Size = new System.Drawing.Size(137, 21);
+            this.cbbIID.TabIndex = 4;
+            this.cbbIID.SelectedIndexChanged += new System.EventHandler(this.cbbIID_SelectedIndexChanged);
             // 
             // ptbDel
             // 
@@ -100,20 +102,21 @@
             this.ptbDel.MouseLeave += new System.EventHandler(this.ptbDel_MouseLeave);
             this.ptbDel.MouseHover += new System.EventHandler(this.ptbDel_MouseHover);
             // 
-            // textBox4
+            // txtSum
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(104, 134);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(97, 20);
-            this.textBox4.TabIndex = 1;
+            this.txtSum.Enabled = false;
+            this.txtSum.Location = new System.Drawing.Point(104, 134);
+            this.txtSum.Name = "txtSum";
+            this.txtSum.Size = new System.Drawing.Size(97, 20);
+            this.txtSum.TabIndex = 1;
             // 
-            // textBox3
+            // txtQuan
             // 
-            this.textBox3.Location = new System.Drawing.Point(104, 102);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(97, 20);
-            this.textBox3.TabIndex = 1;
+            this.txtQuan.Location = new System.Drawing.Point(104, 102);
+            this.txtQuan.Name = "txtQuan";
+            this.txtQuan.Size = new System.Drawing.Size(97, 20);
+            this.txtQuan.TabIndex = 1;
+            this.txtQuan.TextChanged += new System.EventHandler(this.txtQuan_TextChanged);
             // 
             // label4
             // 
@@ -171,14 +174,14 @@
 
         private System.Windows.Forms.Label lbCount;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtSum;
+        private System.Windows.Forms.TextBox txtQuan;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox ptbDel;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbbName;
+        private System.Windows.Forms.ComboBox cbbIID;
     }
 }

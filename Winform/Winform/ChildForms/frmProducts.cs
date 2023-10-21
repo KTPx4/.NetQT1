@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraGrid.Views.Grid;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace Winform.ChildForms
 {
     public partial class frmProducts : UserControl
     {
+        private int indexFocus = -1;
         public frmProducts()
         {
             InitializeComponent();
@@ -58,6 +60,8 @@ namespace Winform.ChildForms
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+          
+
 
         }
     }

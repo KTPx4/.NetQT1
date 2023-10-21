@@ -98,6 +98,7 @@
       <DependentUpon>frmReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Connections\Connection.cs" />
+    <Compile Include="Controller\CT_ODetail.cs" />
     <Compile Include="Controller\CT_Order.cs" />
     <Compile Include="Controller\CT_Product.cs" />
     <Compile Include="Customer.cs">

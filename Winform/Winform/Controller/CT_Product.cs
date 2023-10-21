@@ -145,7 +145,7 @@ namespace Winform.Controller
         }
 
 
-        public List<Item> GetAllCustomers()
+        public List<Item> GetAll()
         {
             return dbProduct.ToList();
         }

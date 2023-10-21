@@ -9,7 +9,7 @@ namespace ASP.Controllers
         ModelCustomer Model = new ModelCustomer();
 
         [HttpPost]
-        public JsonResult Save(ModelProduct item)
+        public JsonResult Save(ModelCustomer item)
         {
             bool success = true;
             string message = "Thêm khách hàng thành công!";
@@ -27,12 +27,7 @@ namespace ASP.Controllers
             {
                 success = false;
                 message = "ID < 10 Ký tự";
-            }
-            else if (!double.TryParse(item.Price.ToString(), out double b))
-            {
-                success = false;
-                message = "Giá phải là số, không được chứa ký tự";
-            }
+            }           
             else
             {
                 Model.Add(item, connectionString);
@@ -41,10 +36,10 @@ namespace ASP.Controllers
         }
 
         [HttpPost]
-        public JsonResult DeleteItem(ModelProduct item)
+        public JsonResult Delete(ModelCustomer item)
         {
             bool success = true;
-            string message = "Xóa sản phẩm thành công!";
+            string message = "Xóa khách hàng thành công!";
 
             var configuration = HttpContext.RequestServices.GetService<IConfiguration>();
             var connectionString = configuration.GetConnectionString("ConnectionString");

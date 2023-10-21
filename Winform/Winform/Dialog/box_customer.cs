@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.Utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,7 +40,27 @@ namespace Winform.Dialog
             lbCountItem.Show();
             lbCountItem.Text = $"Customer {index}";
         }
+        public bool isGetValues()
+        {
+            if (txtID.Text == "") return false;
+            else if (txtName.Text == "") return false;
+            else if (txtAddress.Text == "") return false;
+        
+            return true;
 
+        }
+        public List<String> getItem()
+        {
+            List<String> list = new List<String>()
+            {
+                txtID.Text,
+                txtName.Text,
+                txtAddress.Text 
+            };
+
+            return list;
+
+        }
         private void box_customer_Load(object sender, EventArgs e)
         {
             if (isEdit)

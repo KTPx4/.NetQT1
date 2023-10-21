@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
-            this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
@@ -53,8 +51,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnEdit);
-            this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -62,38 +58,13 @@
             this.panel1.Size = new System.Drawing.Size(1016, 72);
             this.panel1.TabIndex = 4;
             // 
-            // btnEdit
-            // 
-            this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnEdit.Appearance.BackColor = System.Drawing.Color.PeachPuff;
-            this.btnEdit.Appearance.Options.UseBackColor = true;
-            this.btnEdit.Location = new System.Drawing.Point(454, 17);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(95, 36);
-            this.btnEdit.TabIndex = 0;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDelete.Appearance.BackColor = System.Drawing.Color.DarkRed;
-            this.btnDelete.Appearance.Options.UseBackColor = true;
-            this.btnDelete.Location = new System.Drawing.Point(657, 17);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(95, 36);
-            this.btnDelete.TabIndex = 0;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
             // btnAdd
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.btnAdd.Appearance.BackColor = System.Drawing.Color.ForestGreen;
             this.btnAdd.Appearance.Options.UseBackColor = true;
-            this.btnAdd.Location = new System.Drawing.Point(258, 17);
+            this.btnAdd.Location = new System.Drawing.Point(410, 19);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(95, 36);
             this.btnAdd.TabIndex = 0;
@@ -171,8 +142,6 @@
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private DevExpress.XtraEditors.SimpleButton btnEdit;
-        private DevExpress.XtraEditors.SimpleButton btnDelete;
         private DevExpress.XtraEditors.SimpleButton btnAdd;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.BindingSource customerBindingSource;

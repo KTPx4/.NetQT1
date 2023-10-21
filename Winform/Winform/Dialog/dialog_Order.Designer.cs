@@ -30,12 +30,12 @@
         {
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.txtOD = new System.Windows.Forms.TextBox();
+            this.dateO = new DevExpress.XtraEditors.DateEdit();
+            this.cbbCustName = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbbCustID = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
@@ -43,14 +43,14 @@
             this.btnAddItem = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtSumPrice = new System.Windows.Forms.TextBox();
+            this.txtSumItem = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateO.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateO.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
@@ -60,12 +60,12 @@
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.checkBox1);
-            this.groupControl1.Controls.Add(this.textBox1);
-            this.groupControl1.Controls.Add(this.dateEdit1);
-            this.groupControl1.Controls.Add(this.comboBox2);
+            this.groupControl1.Controls.Add(this.txtOD);
+            this.groupControl1.Controls.Add(this.dateO);
+            this.groupControl1.Controls.Add(this.cbbCustName);
             this.groupControl1.Controls.Add(this.label3);
             this.groupControl1.Controls.Add(this.label2);
-            this.groupControl1.Controls.Add(this.comboBox1);
+            this.groupControl1.Controls.Add(this.cbbCustID);
             this.groupControl1.Controls.Add(this.label4);
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Location = new System.Drawing.Point(21, 12);
@@ -87,32 +87,33 @@
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // textBox1
+            // txtOD
             // 
-            this.textBox1.Location = new System.Drawing.Point(94, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtOD.Location = new System.Drawing.Point(94, 33);
+            this.txtOD.Name = "txtOD";
+            this.txtOD.Size = new System.Drawing.Size(121, 20);
+            this.txtOD.TabIndex = 3;
             // 
-            // dateEdit1
+            // dateO
             // 
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(93, 139);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateO.EditValue = null;
+            this.dateO.Location = new System.Drawing.Point(93, 139);
+            this.dateO.Name = "dateO";
+            this.dateO.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateO.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(190, 20);
-            this.dateEdit1.TabIndex = 2;
+            this.dateO.Size = new System.Drawing.Size(190, 20);
+            this.dateO.TabIndex = 2;
             // 
-            // comboBox2
+            // cbbCustName
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(93, 102);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(190, 21);
-            this.comboBox2.TabIndex = 1;
+            this.cbbCustName.Enabled = false;
+            this.cbbCustName.FormattingEnabled = true;
+            this.cbbCustName.Location = new System.Drawing.Point(93, 102);
+            this.cbbCustName.Name = "cbbCustName";
+            this.cbbCustName.Size = new System.Drawing.Size(190, 21);
+            this.cbbCustName.TabIndex = 1;
             // 
             // label3
             // 
@@ -132,13 +133,14 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Name Customer";
             // 
-            // comboBox1
+            // cbbCustID
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(93, 68);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(190, 21);
-            this.comboBox1.TabIndex = 1;
+            this.cbbCustID.FormattingEnabled = true;
+            this.cbbCustID.Location = new System.Drawing.Point(93, 68);
+            this.cbbCustID.Name = "cbbCustID";
+            this.cbbCustID.Size = new System.Drawing.Size(190, 21);
+            this.cbbCustID.TabIndex = 1;
+            this.cbbCustID.SelectedIndexChanged += new System.EventHandler(this.cbbCustID_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -198,8 +200,8 @@
             // 
             // groupControl3
             // 
-            this.groupControl3.Controls.Add(this.textBox3);
-            this.groupControl3.Controls.Add(this.textBox2);
+            this.groupControl3.Controls.Add(this.txtSumPrice);
+            this.groupControl3.Controls.Add(this.txtSumItem);
             this.groupControl3.Controls.Add(this.label6);
             this.groupControl3.Controls.Add(this.label5);
             this.groupControl3.Enabled = false;
@@ -209,19 +211,19 @@
             this.groupControl3.TabIndex = 3;
             this.groupControl3.Text = "Total";
             // 
-            // textBox3
+            // txtSumPrice
             // 
-            this.textBox3.Location = new System.Drawing.Point(91, 73);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(122, 20);
-            this.textBox3.TabIndex = 1;
+            this.txtSumPrice.Location = new System.Drawing.Point(91, 73);
+            this.txtSumPrice.Name = "txtSumPrice";
+            this.txtSumPrice.Size = new System.Drawing.Size(122, 20);
+            this.txtSumPrice.TabIndex = 1;
             // 
-            // textBox2
+            // txtSumItem
             // 
-            this.textBox2.Location = new System.Drawing.Point(91, 43);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(122, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtSumItem.Location = new System.Drawing.Point(91, 43);
+            this.txtSumItem.Name = "txtSumItem";
+            this.txtSumItem.Size = new System.Drawing.Size(122, 20);
+            this.txtSumItem.TabIndex = 1;
             // 
             // label6
             // 
@@ -256,11 +258,12 @@
             this.Name = "dialog_Order";
             this.Text = "Order Item";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.dialog_Order_FormClosing);
+            this.Load += new System.EventHandler(this.dialog_Order_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateO.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateO.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
@@ -274,12 +277,12 @@
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.GroupControl groupControl2;
-        private System.Windows.Forms.TextBox textBox1;
-        private DevExpress.XtraEditors.DateEdit dateEdit1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox txtOD;
+        private DevExpress.XtraEditors.DateEdit dateO;
+        private System.Windows.Forms.ComboBox cbbCustName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbbCustID;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBox1;
@@ -287,8 +290,8 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.FlowLayoutPanel pnContent;
         private DevExpress.XtraEditors.GroupControl groupControl3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtSumPrice;
+        private System.Windows.Forms.TextBox txtSumItem;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
     }

@@ -7,7 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Winform.Controller;
 using Winform.Dialog;
+using Winform.Model;
+using static DevExpress.XtraBars.Controls.CustomLinksControl;
 
 namespace Winform.Diaglog
 {
@@ -193,6 +196,21 @@ namespace Winform.Diaglog
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            switch (typePopup)
+            {
+                case 1:
+                    SaveItem();
+                    break;
+
+                case 2:
+                    SaveCustomer();
+                    break;
+
+                case 3:
+
+                    break;
+            }
+           
             this.DialogResult = DialogResult.OK;
             frmMain.frmMainInstance.RequestReload();
             this.Close();
@@ -201,6 +219,71 @@ namespace Winform.Diaglog
         private void dialog_Popup_FormClosing(object sender, FormClosingEventArgs e)
         {
             frmMain.frmMainInstance.ReloadRequested -= Reload; // xóa sự kiện reload khi đóng form
+
+        }
+        public void SaveCustomer()
+        {
+            int i = 1;
+            String s = "ID have been added:\n";
+            foreach (box_customer item in listItems)
+            {
+                if (!item.isGetValues())
+                {
+                    MessageBox.Show($"The values invalid at customer {i++}", "Error input", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    List<string> values = item.getItem();
+
+                    CT_Customer controller = new CT_Customer();
+
+                    string ItemID = values[0];
+                    if (!controller.isExistsID(ItemID))
+                    {
+                        string ItemName = values[1];
+                        string Addr = values[2];
+                        
+
+                        s += $"{ItemID}\n";
+
+                        controller.AddCustomer(ItemID, ItemName, Addr);
+                    }
+
+
+                }
+            }
+            MessageBox.Show(s, "Add Successs", MessageBoxButtons.OK);
+        }
+
+        public void SaveItem()
+        {
+            int i = 1;
+            String s = "ID have been added:\n";
+            foreach (box_Item item in listItems)
+            {
+                if (!item.isGetValues())
+                {
+                    MessageBox.Show($"The values invalid at item {i++}", "Error input", MessageBoxButtons.OK);                    
+                }
+                else
+                {
+                    List<string> values = item.getItem();
+                    CT_Product controller = new CT_Product();
+                   
+                    string ItemID = values[0];
+                    if(!controller.isExistsID(ItemID))
+                    {
+                        string ItemName = values[1];
+                        string Size = values[2];
+                        decimal Price = decimal.Parse(values[3]);
+                        s += $"{ItemID}\n";
+                        controller.AddItem(ItemID, ItemName, Size, Price);
+                    }                   
+               
+                   
+                }
+            }
+            MessageBox.Show(s, "Add Successs", MessageBoxButtons.OK);
 
         }
     }

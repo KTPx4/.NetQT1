@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GOwULgy2yt70MPm8/uKTvg9WFzKqkllZ/Qq07Euj3iY=",
+  "Hash": "QQCdA0Iid2i6C/9maciWMC7DtcyaKr9B8FSFJL6FjrA=",
   "Source": "ASP",
   "BasePath": "_content/ASP",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\css\\items.css"
     },
     {
+      "Identity": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\css\\order.css",
+      "SourceId": "ASP",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\",
+      "BasePath": "_content/ASP",
+      "RelativePath": "css/order.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\order.css"
+    },
+    {
       "Identity": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\css\\site.css",
       "SourceId": "ASP",
       "SourceType": "Discovered",
@@ -151,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\items.js"
+    },
+    {
+      "Identity": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\js\\order.js",
+      "SourceId": "ASP",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\",
+      "BasePath": "_content/ASP",
+      "RelativePath": "js/order.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\order.js"
     },
     {
       "Identity": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\js\\site.js",

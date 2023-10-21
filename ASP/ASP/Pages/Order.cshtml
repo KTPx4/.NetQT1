@@ -1,0 +1,131 @@
+﻿@page
+@model ASP.Pages.OrderModel
+@{
+    ViewData["Title"] = "Manager Order";
+    ViewData["PageName"] = "order";
+}
+
+
+
+<h1>Customer List</h1>
+
+<button class="btn btn-primary m-3" id="addOrder">AddOrder</button>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Customer ID</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListO)
+        {
+            <tr id="@item.OrderID">
+                <td>@item.OrderID</td>
+                <td>@item.OrderDate</td>
+                <td>@item.CustID</td>
+               
+
+              @*  <td>
+                     <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                    <a onclick="delClick(this)" data-del="@item.OrderID" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                </td> *@
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orderModalLabel">Add Order</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="OrderID">Order ID</label>
+                        <input type="text" class="form-control" id="OrderID" name="OrderID" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="OrderDate">Order Date</label>
+                        <input type="date" class="form-control" id="OrderDate" name="OrderDate" required>
+                    </div>
+                    <div class="form-group border-bottom">
+                        <label for="CustID">Customer ID</label>
+                        <input type="text" class="form-control" id="CustID" name="CustID" required>
+                    </div>
+
+                    <!-- Mục đơn hàng (Item) -->
+                    <div class="item-form">
+                        <div class="form-group">
+                            <label for="ItemID">Item ID</label>
+                            <input type="text" class="form-control" name="ItemID">
+                        </div>
+                        <div class="form-group">
+                            <label for="Quantity">Quantity</label>
+                            <input type="number" class="form-control" name="Quantity">
+                        </div>
+                      
+                    </div>
+                    <button type="button" class="btn btn-primary mt-3" id="addItem">Add Item</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeModal">Close</button>
+                <button type="button" class="btn btn-primary" id="saveOrder">Save Order</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#addOrder').click(function () {
+            $('#orderModal').modal('show');
+        });
+
+        $('#closeModal').click(() => {
+            $('#orderModal').modal('hide');
+        })
+        var orderItems = [];
+
+        $('#addItem').click(function () {
+            // Clone the item form and append it to the order form
+            var itemForm = $('.item-form').first().clone();
+            itemForm.find('input').val('');
+            $('.item-form').last().after(itemForm);
+        });
+
+        $('#saveOrder').click(function () {
+            // Collect order data and item data from the form
+            var order = {
+                OrderID: $('#OrderID').val(),
+                OrderDate: $('#OrderDate').val(),
+                CustID: $('#CustID').val(),
+                Items: []
+            };
+
+            $('.item-form').each(function () {
+                var item = {
+                    ItemID: $(this).find('[name="ItemID"]').val(),
+                    Quantity: $(this).find('[name="Quantity"]').val(),
+                    UnitAmount: $(this).find('[name="UnitAmount"]').val()
+                };
+                order.Items.push(item);
+            });
+            // TODO: Send the order data to the server for saving
+            // You can use AJAX to send the data to the server
+            // and handle the response to update the page as needed
+        });
+        
+    });
+</script>
+
+
+

@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\items.css"
     },
     {
+      "Id": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\css\\order.css",
+      "PackagePath": "staticwebassets\\css\\order.css"
+    },
+    {
       "Id": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -27,6 +31,10 @@
     {
       "Id": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\js\\items.js",
       "PackagePath": "staticwebassets\\js\\items.js"
+    },
+    {
+      "Id": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\js\\order.js",
+      "PackagePath": "staticwebassets\\js\\order.js"
     },
     {
       "Id": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\js\\site.js",

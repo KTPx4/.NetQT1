@@ -12,18 +12,23 @@ namespace Winform.Dialog
 {
     public partial class box_Item : UserControl
     {
+
+
         private Action<Control> deleteItem;
+
         private bool isEdit = false;
         public box_Item()
         {
             InitializeComponent();
             lbCountItem.Hide();
+           
         }
         public box_Item(Action<Control> deleteItem)
         {
             InitializeComponent();
             this.deleteItem = deleteItem;
-            lbCountItem.Hide();
+            lbCountItem.Hide(); 
+          
         }
         public box_Item(Action<Control> deleteItem, bool isEdit)
         {
@@ -31,6 +36,7 @@ namespace Winform.Dialog
             this.deleteItem = deleteItem;
             this.isEdit = isEdit;
             lbCountItem.Hide();
+          
         }
         public box_Item(Action<Control> deleteItem, int index)
         {
@@ -38,7 +44,31 @@ namespace Winform.Dialog
             this.deleteItem = deleteItem;
             lbCountItem.Show();
             lbCountItem.Text = $"Item {index}";
+           
         }
+        public bool isGetValues()
+        {
+            if (txtID.Text == "") return false;
+            else if (txtName.Text == "") return false;
+            else if(txtSize.Text == "") return false;
+            else if(!double.TryParse(txtPrice.Text, out double b)) return false;
+            return true;
+
+        }
+        public  List<String> getItem()
+        {
+            List<String> list = new List<String>()
+            {
+                txtID.Text,
+                txtName.Text,
+                txtSize.Text ,
+                txtPrice.Text 
+            };
+          
+            return list;
+
+        }
+
         private void box_Item_Load(object sender, EventArgs e)
         {
             if(isEdit)
@@ -72,6 +102,8 @@ namespace Winform.Dialog
         {
             lbCountItem.Text = "Item "+ index.ToString();
         }
+
+
 
     }
 }
