@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Winform.Model;
 
 namespace Winform.Dialog
 {
@@ -43,6 +44,19 @@ namespace Winform.Dialog
         {
             if (isEdit)
             {
+                //Customer cs = new MDCustomer().getFID("521H0125");
+                
+                //IQueryable<Customer> li = new MDCustomer().getFromID("521H0125");           
+                //foreach (Customer customer in li)
+                //{
+                //    string id = customer.CustID; // Lấy ID
+                //    string name = customer.CustName; // Lấy tên
+                //    string address = customer.Address; // Lấy địa chỉ
+
+                //    // Sử dụng thông tin tại đây (ví dụ: hiển thị trong ComboBox)
+                //    cbbT.Items.Add($"{id} - {name} ({address})");
+                //}
+
                 btnDel.Enabled = false;
                 btnDel.BackColor = Color.Gray;
                 txtID.Enabled = false;

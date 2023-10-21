@@ -144,6 +144,7 @@ D:\University\net\.net\LT\QT1\Winform\Winform\obj\Debug\Winform.csproj.CoreCompi
 D:\University\net\.net\LT\QT1\Winform\Winform\obj\Debug\Winform.csproj.CopyComplete
 D:\University\net\.net\LT\QT1\Winform\Winform\obj\Debug\Winform.exe
 D:\University\net\.net\LT\QT1\Winform\Winform\obj\Debug\Winform.pdb
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\App.config
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\Winform.exe.config
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\Winform.exe
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\Winform.pdb
@@ -153,6 +154,7 @@ D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpre
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.Drawing.v23.1.dll
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.Printing.v23.1.Core.dll
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.Utils.v23.1.dll
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.XtraBars.v23.1.dll
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.XtraEditors.v23.1.dll
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.XtraGrid.v23.1.dll
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.XtraLayout.v23.1.dll
@@ -163,7 +165,6 @@ D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\System.D
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.Pdf.v23.1.Core.dll
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.Pdf.v23.1.Drawing.dll
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.Sparkline.v23.1.Core.dll
-D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.XtraBars.v23.1.dll
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.RichEdit.v23.1.Core.dll
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.XtraTreeList.v23.1.dll
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.Office.v23.1.Core.dll
@@ -172,6 +173,7 @@ D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpre
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.Drawing.v23.1.xml
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.Printing.v23.1.Core.xml
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.Utils.v23.1.xml
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.XtraBars.v23.1.xml
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.XtraEditors.v23.1.xml
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.XtraGrid.v23.1.xml
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.XtraLayout.v23.1.xml
@@ -182,11 +184,19 @@ D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\System.D
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.Pdf.v23.1.Core.xml
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.Pdf.v23.1.Drawing.xml
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.Sparkline.v23.1.Core.xml
-D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.XtraBars.v23.1.xml
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.RichEdit.v23.1.Core.xml
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.XtraTreeList.v23.1.xml
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\bin\Debug\DevExpress.Office.v23.1.Core.xml
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.csproj.AssemblyReference.cache
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.ChildForms.frmCustomer.resources
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.ChildForms.frmOrders.resources
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.ChildForms.frmProducts.resources
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.ChildForms.frmReport.resources
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.Dialog.box_customer.resources
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.Dialog.box_Item.resources
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.Dialog.box_Items_Order.resources
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.Dialog.dialog_Order.resources
+D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.Diaglog.dialog_Popup.resources
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.frmMain.resources
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.Properties.Resources.resources
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.csproj.GenerateResource.cache
@@ -195,12 +205,3 @@ D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.csproj.CopyComplete
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.exe
 D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.pdb
-D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.ChildForms.frmProducts.resources
-D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.Dialog.box_Item.resources
-D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.ChildForms.frmCustomer.resources
-D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.Dialog.box_customer.resources
-D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.Diaglog.dialog_Popup.resources
-D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.ChildForms.frmOrders.resources
-D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.Dialog.box_Items_Order.resources
-D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.Dialog.dialog_Order.resources
-D:\TDTU  - University\net\.net\LT\QT1\.NetQT1\Winform\Winform\obj\Debug\Winform.ChildForms.frmReport.resources

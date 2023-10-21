@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.Item = new System.Windows.Forms.Panel();
-            this.lbCountItem = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,12 +37,15 @@
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
+            this.lbCountItem = new System.Windows.Forms.Label();
+            this.cbbT = new System.Windows.Forms.ComboBox();
             this.Item.SuspendLayout();
             this.SuspendLayout();
             // 
             // Item
             // 
             this.Item.BackColor = System.Drawing.Color.Snow;
+            this.Item.Controls.Add(this.cbbT);
             this.Item.Controls.Add(this.btnClear);
             this.Item.Controls.Add(this.btnDel);
             this.Item.Controls.Add(this.label2);
@@ -57,17 +59,6 @@
             this.Item.Name = "Item";
             this.Item.Size = new System.Drawing.Size(321, 213);
             this.Item.TabIndex = 2;
-            // 
-            // lbCountItem
-            // 
-            this.lbCountItem.AutoSize = true;
-            this.lbCountItem.BackColor = System.Drawing.Color.Transparent;
-            this.lbCountItem.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lbCountItem.Location = new System.Drawing.Point(3, 4);
-            this.lbCountItem.Name = "lbCountItem";
-            this.lbCountItem.Size = new System.Drawing.Size(36, 13);
-            this.lbCountItem.TabIndex = 9;
-            this.lbCountItem.Text = "Item 1";
             // 
             // btnClear
             // 
@@ -145,6 +136,25 @@
             this.txtID.Size = new System.Drawing.Size(200, 20);
             this.txtID.TabIndex = 13;
             // 
+            // lbCountItem
+            // 
+            this.lbCountItem.AutoSize = true;
+            this.lbCountItem.BackColor = System.Drawing.Color.Transparent;
+            this.lbCountItem.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lbCountItem.Location = new System.Drawing.Point(3, 4);
+            this.lbCountItem.Name = "lbCountItem";
+            this.lbCountItem.Size = new System.Drawing.Size(36, 13);
+            this.lbCountItem.TabIndex = 9;
+            this.lbCountItem.Text = "Item 1";
+            // 
+            // cbbT
+            // 
+            this.cbbT.FormattingEnabled = true;
+            this.cbbT.Location = new System.Drawing.Point(91, 185);
+            this.cbbT.Name = "cbbT";
+            this.cbbT.Size = new System.Drawing.Size(159, 21);
+            this.cbbT.TabIndex = 19;
+            // 
             // box_customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,5 +182,6 @@
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.ComboBox cbbT;
     }
 }
