@@ -2,6 +2,78 @@
 @model ProductModel
 @{
     ViewData["Title"] = "Manager Product";
+    ViewData["PageName"] = "product";
 }
 
-<h1>This is page Product</h1>
+
+
+<h1>Product List</h1>
+
+<button class="btn btn-primary m-3" id="addProduct">Add Product</button>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Size</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListProducts)
+        {
+            <tr id="@item.ID">
+                <td>@item.ID</td>
+                <td>@item.Name</td>
+                <td>@item.Size</td>
+                <td>@item.Price</td>
+                <td>
+                    @* <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a> *@
+                    <a onclick="delClick(this)" data-del="@item.ID" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Modal for adding a new product -->
+<div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addProductModalLabel">Add Product</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Form for adding a new product -->
+                <form id="addProductForm">
+                    <div class="form-group">
+                        <label for="id">ID</label>
+                        <input type="text" class="form-control" id="id" name="id">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="size">Size</label>
+                        <input type="text" class="form-control" id="size" name="size">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="text" class="form-control" id="price" name="price">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeModel">Close</button>
+                <button type="button" class="btn btn-primary" id="saveProduct">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,12 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<form method="post">
+    <h3 class="d-flex justify-content-center">Register Account</h3>
+    <input asp-for="Input.Username" type="text" placeholder="Username" required />
+    <input asp-for="Input.Password" type="password" placeholder="Password" required />
+    <button type="submit">Register</button>
+</form>

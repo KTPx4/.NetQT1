@@ -2,6 +2,56 @@
 @model CustomerModel
 @{
     ViewData["Title"] = "Manager Customer";
+    ViewData["PageName"] = "customer";
 }
 
-<h1>This page is manager Customer</h1>
+
+
+
+
+<div class="container-lg">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2>Manager <strong>Products</strong></h2></div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Address</th>
+               
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        @foreach (var item in Model.ListCust)
+                        {
+                        <tr>
+                            <td>@item.ID</td>
+                            <td>@item.Name</td>
+                            <td>@item.Address</td>
+                        
+
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                        }
+
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

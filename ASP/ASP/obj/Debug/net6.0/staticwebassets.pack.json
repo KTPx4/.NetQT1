@@ -5,12 +5,28 @@
       "PackagePath": "staticwebassets\\ASP.bundle.scp.css"
     },
     {
+      "Id": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\css\\customer.css",
+      "PackagePath": "staticwebassets\\css\\customer.css"
+    },
+    {
+      "Id": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\css\\items.css",
+      "PackagePath": "staticwebassets\\css\\items.css"
+    },
+    {
       "Id": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\js\\customer.js",
+      "PackagePath": "staticwebassets\\js\\customer.js"
+    },
+    {
+      "Id": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\js\\items.js",
+      "PackagePath": "staticwebassets\\js\\items.js"
     },
     {
       "Id": "D:\\TDTU  - University\\net\\.net\\LT\\QT1\\.NetQT1\\ASP\\ASP\\wwwroot\\js\\site.js",

@@ -1,19 +1,22 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddAuthentication("CookieAuth")
-    .AddCookie("CookieAuth", config =>
+builder.Services.AddAuthentication("Cookies")
+    .AddCookie("Cookies", config =>
     {
         config.Cookie.Name = "User.Login";
         config.LoginPath = "/Login";
         config.Cookie.IsEssential = true;
     });
+
 
 var app = builder.Build();
 
